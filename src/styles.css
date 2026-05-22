@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 14px system-ui, sans-serif;
+  background: #1a1c20;
+  color: #eee;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #14151a;
+  border-bottom: 1px solid #2a2d33;
+}
+.app-header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.app-header nav button {
+  background: transparent;
+  border: 1px solid #3a3d44;
+  color: #ccc;
+  padding: 6px 14px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.app-header nav button:hover {
+  background: #2a2d33;
+}
+#main {
+  padding: 20px;
+  min-height: calc(100vh - 130px);
+}
+.library-toolbar {
+  margin-bottom: 12px;
+}
+.library-toolbar button {
+  padding: 8px 16px;
+  background: #4a6cf7;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.library-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.library-table th,
+.library-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #2a2d33;
+}
+.library-table button {
+  background: #2a2d33;
+  border: 1px solid #3a3d44;
+  color: #eee;
+  padding: 4px 10px;
+  margin-right: 4px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.player-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #14151a;
+  border-top: 1px solid #2a2d33;
+}
+.player-bar button {
+  padding: 6px 12px;
+  background: #2a2d33;
+  border: 1px solid #3a3d44;
+  color: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.meter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.meter-bar {
+  width: 120px;
+  height: 8px;
+  background: #2a2d33;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.meter-mic-fill,
+.meter-out-fill {
+  height: 100%;
+  background: #4a6cf7;
+  width: 0%;
+  transition: width 0.1s;
+}
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+.settings label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.settings select,
+.settings input {
+  padding: 6px;
+  background: #14151a;
+  border: 1px solid #3a3d44;
+  color: #eee;
+  border-radius: 4px;
+}

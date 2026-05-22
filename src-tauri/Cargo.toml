@@ -1,0 +1,33 @@
+[package]
+name = "wavoic"
+version = "0.1.0"
+edition = "2021"
+description = "Play music into Valorant voice chat"
+
+[lib]
+name = "wavoic_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+cpal = "0.15"
+symphonia = { version = "0.5", features = ["all"] }
+rubato = "0.15"
+rtrb = "0.3"
+global-hotkey = "0.6"
+parking_lot = "0.12"
+anyhow = "1"
+thiserror = "1"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+once_cell = "1"
+
+[dev-dependencies]
+approx = "0.5"
